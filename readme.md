@@ -1,4 +1,4 @@
-# This the assistive tool for health care project readme. In this readme, I will walk you through a brief description of our project. The reason why we design and created this website, functionalities of the website, and how to use the website.
+## This the assistive tool for health care project readme. In this readme, I will walk you through a brief description of our project. The reason why we design and created this website, functionalities of the website, and how to use the website.
 
 
 ### A brief description of the project: 
