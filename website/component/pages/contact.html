@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="../css/contact.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION HEADER -->
+    <div class="bImage" id="bImage">
+
+        <header>
+            <ul id="navigationList">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="tips.html">Tips</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="" id="logout">logout</a>
+                </li>
+                <li>
+                    <a href="" id="profile">profile</a>
+                </li>
+            </ul>
+        </header>
+
+        <h1 class="ImgHeader">Contact Us</h1>
+    </div>
+    <!-- MAIN -->
+    <main>
+
+        <!-- CONTACT FORM -->
+
+        <div class="contactFormContainer" id="contactFormContainer">
+            <form class="contactForm" id="contactForm">
+
+                <h3><label for="firstName" id="firstName">First Name</label></h3>
+                <input type="text" id="firstName" name="username" size="20" required><br><br>
+                <h3><label for="lastName" id="lastName">Last Name</label></h3>
+                <input type="text" id="lastName" name="username" size="20" required><br><br>
+                <h3><label for="reasonforcontcting" id="reasonforcontcting">Reason For Contacting</label></h3>
+                <input type="text" id="reasonforcontcting" name="reasonforcontcting" size="20" required><br><br>
+                <h3><label for="message" id="message">Message</label></h3>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send" class="contactFormInput">
+            </form>
+        </div>
+
+        <!-- CONTACT INTO -->
+        <div class="contactInfoContainerDiv">
+
+
+            <div class="contactInfoContainer" id="contactInfoContainer">
+
+                <h1>
+                    Contact Info
+                </h1>
+
+                <br>
+                <h5>Address</h5>
+                <h3>Behna University,</h3> 
+                <h3>Computer Science Department,</h3>
+                <h3>Second Floor.</h3>
+                 
+
+                <h5>Email Us</h5>
+                <h3>grad@Gmail.Com</h3>
+
+                <h5>Call Us
+                </h5>
+                <h3>+356 258 578</h3>
+            </div>
+
+            <!-- CONTACT ICON -->
+            <div class="contactIcons" id="contactIcons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>This is the offcial website for the Assistive tool project</h3>
+        <h5>All copy rights are reserved for @benha team for development.</h5>
+    </footer>
+
+    <!-- Firebase Authentication credentials-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC9I8i6Z8gLXY6PMGX_kG10kfA7rxcvGFM",
+    authDomain: "graduation-project-bff6d.firebaseapp.com",
+    databaseURL: "https://graduation-project-bff6d.firebaseio.com",
+    projectId: "graduation-project-bff6d",
+    storageBucket: "graduation-project-bff6d.appspot.com",
+    messagingSenderId: "366663866301",
+    appId: "1:366663866301:web:943064f525a6b40b85a4d4",
+    measurementId: "G-PX7WP4BN1Y"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+  // make auth and firestore references
+  const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // update firestore settings
+    // db.settings({ timestampsInSnapshots: true });
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script defer src="../js/contact.js"></script>
+
+
+
+</body>
+
+</html>

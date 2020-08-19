@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="../css/profileclinc.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION HEADER -->
+    <div class="bImage" id="bImage">
+
+        <header>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="tips.html">Tips</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="" id="logout">logout</a>
+                </li>
+                <li>
+                    <a href="" id="profile">profile</a>
+                </li>
+            </ul>
+        </header>
+
+        <h1 class="ImgHeader">Profile Clinic</h1>
+    </div>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- CLINCS: LIST -->
+        <!-- DOCTORS: SPCIALIZATION IN EACH CLINC-->
+        <!-- PATIENTS: EACH CLINC -->
+        <!-- RATINGS: OF EACH CLINC-->
+
+
+
+
+        <!-- CLINCS: SPECIALIZATIONS/DOCTORS/NUMBER OF PATIENTS/CONTACT -->
+        <h1 class="clincHeader">Doctor's List</h1>
+        
+        <div class="lineBreak" id="lineBreak">
+            <hr>
+        </div>
+
+        <div class="patientPreviousList">
+            <div class="patientPreviousDiseases" id="patientPreviousDiseases">
+                <h1 class="patientPreviousHeader">Patient Previous Diseases</h1>
+                <ul class="patientPreviousUL" id="patientPreviousdiseaseUL">
+                </ul>
+            </div>
+
+            <div class="patientPreviousMedications" id="patientPreviousMedications">
+                <h1 class="patientPreviousHeader">Patient Current Medications</h1>
+                <ul class="patientPreviousUL" id="patientPreviousmedicationUL">
+                </ul>
+            </div>
+
+            <div class="patientPreviousDoctors" id="patientPreviousDoctors">
+                <h1 class="patientPreviousHeader">Patient Current Doctors</h1>
+                <ul class="patientPreviousUL" id="patientPreviousdoctorUL">
+                </ul>
+            </div>
+            <div class="patientPreviousDoctors" id="patientPreviousDoctors">
+                <h1 class="patientPreviousHeader">Patient Current Doctors</h1>
+                <ul class="patientPreviousUL" id="patientPreviousdoctorUL2">
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <h3>This is the offcial website for the Assistive tool project</h3>
+        <h5>All copy rights are reserved for @benha team for development.</h5>
+    </footer>
+
+    <!-- Firebase Authentication credentials-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC9I8i6Z8gLXY6PMGX_kG10kfA7rxcvGFM",
+    authDomain: "graduation-project-bff6d.firebaseapp.com",
+    databaseURL: "https://graduation-project-bff6d.firebaseio.com",
+    projectId: "graduation-project-bff6d",
+    storageBucket: "graduation-project-bff6d.appspot.com",
+    messagingSenderId: "366663866301",
+    appId: "1:366663866301:web:943064f525a6b40b85a4d4",
+    measurementId: "G-PX7WP4BN1Y"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+  // make auth and firestore references
+//   const auth = firebase.auth();
+const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // update firestore settings
+    // db.settings({ timestampsInSnapshots: true });
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script defer src="../js/profileclinc.js"></script>
+
+
+
+</body>
+
+</html>

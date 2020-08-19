@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="../css/profilepatientmedical.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION HEADER -->
+    <div class="bImage" id="bImage">
+
+        <header>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="tips.html">Tips</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="" id="logout">logout</a>
+                </li>
+                <li>
+                    <a href="" id="profile">profile</a>
+                </li>
+            </ul>
+        </header>
+
+        <h1 class="ImgHeader">Profile Patient Medical Record</h1>
+    </div>
+
+    <!-- MAIN -->
+
+    <main>
+        <!-- PATIENTS CURRENT DISEASES -->
+        <h1 class="medicalRecordHeader">Patient Current Record</h1>
+
+        <div class="lineBreak" id="lineBreak">
+            <hr>
+        </div>
+        <ul id="cafe-list"></ul>
+        <div class="patientCurrentList">
+
+            <div class="patientCurrnetDiseases" id="patientCurrnetDiseases">
+                <h1 class="patientCurrentHeader">Patient Current Diseases</h1>
+                <ul class="patientCurrentUL" id="patientCurrentdiseaseUL">
+                    
+                </ul>
+            </div>
+            <!-- PATIENTS CURRENT MEDICANS  -->
+            <div class="patientCurrnetMedications" id="patientCurrnetMedications">
+                <h1 class="patientCurrentHeader">Patient Current Medications</h1>
+                <ul class="patientCurrentUL" id="patientCurrentMedicationUL">
+                </ul>
+            </div>
+            <!-- PATIENTS CURRENT DOCTORS  -->
+            <div class="patientCurrnetDoctors" id="patientCurrnetDoctors">
+                <h1 class="patientCurrentHeader">Patient Current Doctors</h1>
+                <ul class="patientCurrentUL" id="patientCurrentdoctorUL">
+                </ul>
+            </div>
+        </div>
+
+        <!-- PATIENTS PREVOIUS DISEASES -->
+
+        <h1 class="medicalRecordHeader">Patient Previous Record</h1>
+
+        <div class="lineBreak" id="lineBreak">
+            <hr>
+        </div>
+
+        <div class="patientPreviousList">
+            <div class="patientPreviousDiseases" id="patientPreviousDiseases">
+                <h1 class="patientPreviousHeader">Patient Previous Diseases</h1>
+                <ul class="patientPreviousUL" id="patientPreviousdiseaseUL">
+                </ul>
+            </div>
+
+            <div class="patientPreviousMedications" id="patientPreviousMedications">
+                <h1 class="patientPreviousHeader">Patient Current Medications</h1>
+                <ul class="patientPreviousUL" id="patientPreviousmedicationUL">
+                </ul>
+            </div>
+
+            <div class="patientPreviousDoctors" id="patientPreviousDoctors">
+                <h1 class="patientPreviousHeader">Patient Current Doctors</h1>
+                <ul class="patientPreviousUL" id="patientPreviousdoctorUL">
+                </ul>
+            </div>
+        </div>
+
+        <!-- PATIENTS CONTACTS  -->
+
+        <h1 class="medicalRecordHeader">Patient Contacts Record</h1>
+
+        <div class="lineBreak" id="lineBreak" style="margin-left: 25%;">
+            <hr>
+        </div>
+
+        <div class="patientContacts">
+            <div class="patientContactsNamesDiv" id="patientContactsNamesDiv">
+                <h1 class="patientContactsHeader">Patient Contact Name</h1>
+                <ul class="patientContactsUL" id="patientContactsnameUL">
+                </ul>
+            </div>
+
+            <div class="patientContactsNumberDiv" id="patientContactsNumberDiv">
+                <h1 class="patientContactsHeader">Patient Contact Number</h1>
+                <ul class="patientContactsUL" id="patientContactsnumberUL">
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <h3>This is the offcial website for the Assistive tool project</h3>
+        <h5>All copy rights are reserved for @benha team for development.</h5>
+    </footer>
+
+    <!-- Firebase Authentication credentials-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+ 
+ // Initialize Firebase
+ var firebaseConfig = {
+    apiKey: "AIzaSyC9I8i6Z8gLXY6PMGX_kG10kfA7rxcvGFM",
+    authDomain: "graduation-project-bff6d.firebaseapp.com",
+    databaseURL: "https://graduation-project-bff6d.firebaseio.com",
+    projectId: "graduation-project-bff6d",
+    storageBucket: "graduation-project-bff6d.appspot.com",
+    messagingSenderId: "366663866301",
+    appId: "1:366663866301:web:943064f525a6b40b85a4d4",
+    measurementId: "G-PX7WP4BN1Y"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+  // make auth and firestore references
+  const auth = firebase.auth();
+    const db = firebase.firestore();
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/profilepatientmedical.js"></script>
+</body>
+
+</html>

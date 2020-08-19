@@ -1,0 +1,157 @@
+body {
+    
+    background-image: linear-gradient(-75deg, gray, lightblue);    
+}
+.bImage {
+    width: 100%;
+    height: 600px;
+    border: 2px solid red;
+    background: url(../img/a.jpg) top center;
+}
+.ImgHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 18%;
+    margin-top: 20%;
+}
+
+header {
+    padding-left: 35%;
+}
+
+header ul {
+    padding-top: 2%;
+    list-style-type: none;
+    display: flex;
+}
+
+header li {
+    padding-left: 5%;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.lineBreak {
+    width: 50%;
+    margin-left: 20%;
+    box-shadow: 5px 10px 18px blue;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    color: cornsilk;
+    font-size: 150%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.conditionTipsHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.tipsAdvices {
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.tipsAdvicesHeardRate {
+    width: 100%;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.tipsAdvicesHeardRate h1 {
+    padding-left: 5%;
+}
+
+.tipsAdvicesHeardRate ul {
+    padding-left: 9%;
+}
+
+.tipsAdvicesBloodPressure {
+    width: 100%;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+    margin-top: 8%;
+}
+
+.tipsAdvicesBloodPressure h1 {
+    padding-left: 5%;
+}
+
+.tipsAdvicesBloodPressure ul {
+    padding-left: 9%;
+}
+
+.tipsAdvicesSleepingHours {
+    width: 100%;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+    margin-top: 8%;
+}
+
+.tipsAdvicesSleepingHours h1 {
+    padding-left: 5%;
+}
+
+.tipsAdvicesSleepingHours ul {
+    padding-left: 9%;
+}
+
+.tipsAdvicesCaloriesBurnt {
+    width: 100%;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+    margin-top: 8%;
+}
+
+.tipsAdvicesCaloriesBurnt h1 {
+    padding-left: 5%;
+}
+
+.tipsAdvicesCaloriesBurnt ul {
+    padding-left: 9%;
+}

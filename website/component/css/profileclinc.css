@@ -1,0 +1,136 @@
+body {
+    
+    background-image: linear-gradient(-75deg, gray, lightblue);    
+}
+.bImage {
+    width: 100%;
+    height: 600px;
+    border: 2px solid red;
+    background: url(../img/a.jpg) top center;
+}
+.ImgHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 42%;
+    margin-top: 13%;
+}
+
+header {
+    padding-left: 35%;
+}
+
+ul {
+    padding-top: 2%;
+    list-style-type: none;
+    display: flex;
+}
+
+header li {
+    padding-left: 5%;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.lineBreak {
+    width: 50%;
+    margin-left: 20%;
+    box-shadow: 5px 10px 18px blue;
+}
+footer {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    color: cornsilk;
+    font-size: 150%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.containerList {
+    display: flex;
+}
+
+.clincList {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 98%;
+    margin-left: 1%;
+    border: 1px solid blue;
+    border-radius: 6%;
+    box-shadow: 5px 10px 18px black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.containerListElement {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 150%;
+    text-shadow: 2px 2px 5px blue;
+    padding-left: 10%;
+}
+
+.clincHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 40%;
+    margin-top: 10%; 
+    margin-bottom: 5%;  
+}
+
+.specializationHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 150%;
+    text-shadow: 2px 2px 5px blue;
+    padding-left: 2%;
+}
+
+.patientPreviousUL {
+    list-style-type: none;
+    padding-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 150%;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.patientPreviousList {
+    display: flex;
+    width: 80%;
+    border: 1px solid blue;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px black;
+    margin-left: 9%;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+.patientPreviousList div {
+    padding-left: 5%;
+}
+
+
+
+.patientPreviousList h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 200%;
+    text-shadow: 2px 2px 5px blue;
+}

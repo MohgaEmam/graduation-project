@@ -1,0 +1,224 @@
+body {
+    
+    background-image: linear-gradient(-75deg, gray, lightblue);    
+}
+.bImage {
+    width: 100%;
+    height: 600px;
+    border: 2px solid red;
+    background: url(../img/a.jpg) top center;
+}
+.ImgHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 45%;
+    margin-top: 12.5%;
+}
+
+header {
+    padding-left: 35%;
+}
+header ul {
+
+    padding-top: 2%;
+    list-style-type: none;
+    display: flex;
+
+}
+header li {
+
+    padding-left: 5%;
+    
+}
+header a {
+
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+    
+}
+
+.serviceDiscription ul {
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+    
+}
+
+.serviceDiscription li {
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.serviceDiscription a {
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.lineBreak {
+    width: 50%;
+    margin-left: 20%;
+    box-shadow: 5px 10px 18px blue;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+    color: cornsilk;
+    font-size: 150%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.offerHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.serviceDiscription {
+    margin-top: 10%;
+    background: url(../img/medical.gif) no-repeat;
+    background-size: cover;
+}
+
+.card {
+    width: 17%;
+    border: 1px solid blue;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    display: inline-block;
+    border-radius: 5%;
+    padding-top: 2%;
+    box-shadow: 5px 10px 18px black;
+    background-color: transparent;
+}
+
+.heartRateImg {
+    width: 60%;
+    height: 50%;
+    padding-left: 15%;
+}
+
+.bloodPressureImg {
+    width: 80%;
+    height: 65%;
+    padding-left: 15%;
+    padding-top: 17%;
+    top: 20%;
+}
+
+.sleepingImg {
+    width: 45%;
+    height: 50%;
+    padding-left: 15%;
+}
+
+.caloriesBurntImg {
+    width: 50%;
+    height: 50%;
+    padding-left: 15%;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 200%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 14%;  
+}
+.serviceUL {
+    padding-bottom: 15%;
+}
+
+.happyClientsHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 400%;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.serviceClientCard {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px blue;
+    margin-left: 5%;
+    display: flex;
+}
+
+.meetTheTeamImg {
+    border: 5px solid grey;
+    margin-left: 10%;
+    border-radius: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#beardGuy {
+    width: 40%;
+    height: 35%;
+    margin-left: 30%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#glassesLady {
+    width: 40%;
+    height: 35%;
+    margin-left: 30%;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#actorGuy {
+    width: 40%;
+    height: 33%;
+    margin-left: 30%;
+    position: relative;
+    animation-name: example3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.clientCard h3 {
+    width: 80%;
+    font-size: 150%;
+    padding-left: 10%;
+}
+.clientCard h5 {
+    font-size: 150%;
+    padding-left: 30%;
+}
+.clientCard p {
+    font-size: 170%;
+    padding-left: 33%;
+    padding-bottom: 25%;
+}
+.clientCard {
+    width: 25%;
+    margin-left: 3.5%;
+    border: 1px solid blue;
+    border-radius: 7%;
+    box-shadow: 5px 10px 18px black;
+}
